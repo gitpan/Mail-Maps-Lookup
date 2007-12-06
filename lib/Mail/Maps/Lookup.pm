@@ -8,12 +8,10 @@ use Exporter ();
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(host activation_code ip_address);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 $LIBRARY = __PACKAGE__;
 
 use Net::DNS;
-
-our $VERSION = '0.01';
 
 $|=1;
 
@@ -130,7 +128,7 @@ Default is 'r.mail-abuse.com';
 
 =item B<activation_code>
 
-Trend Micro Activation code (required);
+Trend Micro activation code (required);
 
 =item B<ip_address>
 
@@ -147,6 +145,7 @@ It returns : 0 (not listed), 1 (listed), 2 (unable to connect to maps server or 
 =head1 SEE ALSO
 
 MAPS lookup tool, http://www.mail-abuse.com/cgi-bin/lookup
+
 Trend Micro, http://it.trendmicro-europe.com/
 
 =head1 AUTHOR
@@ -157,8 +156,6 @@ Matteo Cantoni, E<lt>matteo.cantoni@nothink.orgE<gt>
 
 Copyright (C) 2007 by Matteo Cantoni 
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.6 or,
-at your option, any later version of Perl 5 you may have available.
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =cut
